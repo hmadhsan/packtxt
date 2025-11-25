@@ -145,6 +145,4 @@ npx packtxt -i
 
 ---
 
-## 📄 License
-
-MIT © Hammad Hassan
+**Made with ❤️ by Hammad Hassan**
