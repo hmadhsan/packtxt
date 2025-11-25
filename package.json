@@ -1,6 +1,6 @@
 {
   "name": "packtxt",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A fast CLI that turns any folder into a single text file — perfect for sharing codebases with AI.",
   "main": "src/index.js",
   "bin": {
