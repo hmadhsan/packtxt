@@ -1,0 +1,16 @@
+{
+  "name": "packtxt",
+  "version": "1.0.0",
+  "description": "A fast CLI that turns any folder into a single text file — perfect for sharing codebases with AI.",
+  "main": "src/index.js",
+  "bin": {
+    "packtxt": "./bin/cli.js"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "ignore": "^5.2.4",
+    "clipboardy": "^4.0.0",
+    "prompts": "^2.4.2"
+  }
+}
