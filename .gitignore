@@ -1,0 +1,4 @@
+node_modules/
+packtxt-output.txt
+npm-debug.log
+.DS_Store
