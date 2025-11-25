@@ -1,17 +1,20 @@
 # packtxt — Convert Any Folder Into One Clean Text File
-packtxt is a simple and fast tool that takes your entire folder and converts it into **one single text fThis is perfect when you want to share your whole codebase with AI tools like ChatGPT, Claude, Gemini, o---
+packtxt is a simple and fast CLI tool that takes your entire folder and converts it into **one single text file**.
+This is perfect when you want to share your whole codebase with AI tools like ChatGPT, Claude, Gemini, or Copilot.
+---
 ## ■ The Problem
-AI ko sahi jawaab tabhi milta hai jab **poora context** diya jaye.
-Lekin normally yeh issues hotay hain:
-- Bohat saari files hoti hain → copy/paste impossible
-- ZIP file AI nahi kholta
-- Ek file dene se AI confused hota hai
-- Multi-file code analysis fail hota hai
-- Structure AI ko samajh nahi aata
-- Files mix hojati hain → AI hallucination
+AI tools work best when they receive **complete project context**.
+But normally, you face these problems:
+- Too many files to copy manually
+- ZIP files cannot be read by AI
+- Missing files confuse AI
+- Multi-file refactoring becomes difficult
+- Code structure gets lost
+- Files get mixed up
+- AI hallucinates when given incomplete code
 ---
 ## ■ The Solution: packtxt
-packtxt aik folder leta hai aur **har file ko clearly separated format** me ek text file me daal deta haIt looks like this:
+packtxt takes an entire folder and converts each file into a **clean, well■structured text format** that AI can easily undersHere’s what the output looks like:
 ```
 --- intro.js ---
 console.log("This is intro file")
@@ -20,11 +23,11 @@ console.log("This is about file")
 --- contact.js ---
 console.log("This is contact file")
 ```
-AI ko crystal clear hojata hai:
-- Kon si file kaha start hoti hai
-- Kaha end hoti hai
-- Kis file ka kya naam hai
-- Kis tarah ka structure hai
+AI can instantly understand:
+- Which file starts where
+- Which file ends where
+- The file names
+- The structure of the project
 ---
 ## ■ Example Folder Structure
 ```
@@ -61,10 +64,10 @@ console.log("This is about file")
 --- contact.js ---
 console.log("This is contact file")
 ```
-Everything clean, readable, structured, and AI-friendly.
+Everything is clean, readable, structured, and AI-friendly.
 ---
-## ■ Installation
-No installation needed:
+## ■ Usage
+No installation required:
 ```
 npx packtxt
 ```
@@ -74,44 +77,43 @@ npx packtxt -i
 ```
 ---
 ## ■ What packtxt currently supports (Your REAL version)
-✔ Full folder → one text file
+✔ Converts an entire folder into one text file
 ✔ Respects `.gitignore`
-✔ Auto-ignore `node_modules`
-✔ Auto-ignore system folders
-✔ Sorted output
-✔ Interactive folder selection
-✔ Clipboard copy
-*(No markdown mode, no tokens, no exclude — because you reverted them.)*
+✔ Auto■ignores `node_modules`
+✔ Auto■ignores system folders
+✔ Sorted file output
+✔ Interactive mode (`-i`)
+✔ Auto clipboard copy
+*(Markdown output, token counting, exclude patterns NOT included — since you reverted those features.)*
 ---
 ## ■ Why You Should Use This
-- AI gets **full project context**
+- AI gets **complete context**
 - No missing files
-- No manual copy-paste
-- No confusion about structure
+- No manual copy/paste
 - Perfect for debugging
-- Perfect for refactoring
 - Perfect for rewriting whole projects
-Basically, AI ko wo sab mil jata hai jo usay chahiye — bina tension ke.
+- Makes LLM responses accurate and useful
 ---
 ## ■ Testing Instructions
-1. Create a folder with 2–3 JS files.
+1. Create a folder with a few files.
 2. Run:
 ```
 npx packtxt
 ```
-3. Check `packtxt-output.txt`
+3. Check the output file:
+ `packtxt-output.txt`
 4. Verify:
- - sari files included
- - correct headings
- - sorted output
-5. Try `.gitignore` to skip files
+ - All files are included
+ - Correct headings
+ - Sorted output
+5. Try using `.gitignore` to skip files
 ---
 ## ■ Roadmap
-- Markdown mode
+- Markdown output
 - Token counting
 - Pretty TUI
 - Diff mode
-- Web UI
+- Web UI (packtxt-server)
 ---
 ## ■ License
 MIT © Hammad Hassan
